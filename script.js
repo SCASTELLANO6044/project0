@@ -12,5 +12,6 @@ const uncheckedCountSpan = document.getElementById('unchecked-count')
 function newTodo() {
   itemCountSpan.innerHTML=parseInt(itemCountSpan.innerHTML)+1
   uncheckedCountSpan.innerHTML=parseInt(uncheckedCountSpan.innerHTML)+1
+  list.innerHTML = list.innerHTML+'New Task <br>'
   alert('You have something to do')
 }
