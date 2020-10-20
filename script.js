@@ -10,10 +10,7 @@ const itemCountSpan = document.getElementById('item-count')
 const uncheckedCountSpan = document.getElementById('unchecked-count')
 
 function newTodo() {
-  function hang(secs){}
-  function hang(secs){
-    const doneAt = Date.now()+(secs*1000);
-    while (Date.now<doneAt){}
-  }
-  hang(20)
+  itemCountSpan.innerHTML=parseInt(itemCountSpan.innerHTML)+1
+  uncheckedCountSpan.innerHTML=parseInt(uncheckedCountSpan.innerHTML)+1
+  alert('You have something to do')
 }
